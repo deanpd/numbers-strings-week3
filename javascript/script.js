@@ -1,7 +1,7 @@
 'use strict';
 
 $('#submit').on('click', runInput);
-$('#reset').on('click', reset); //Not resetting entries to 0?
+$('#reset').on('click', reset);
 
 function runInput(evt) {
   var inputText = $('#input-text').val();
@@ -24,7 +24,7 @@ function reset() {
   entries = 0;
   total = 0;
   average = 0;
-  showResults(); //Adding this fixed the reset to 0 issue 
+  showResults(); 
 }
 
 function showResults() {
